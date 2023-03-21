@@ -14,6 +14,7 @@ class ProjectController extends Controller
      */
     public function index(Request $request)
     {
+        
         $q = $request->q ?? null;
         $pageIndex = $request->q ?? 0;
         $pageSize = $request->pageSize ?? 3;
